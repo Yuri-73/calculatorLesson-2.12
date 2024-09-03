@@ -22,7 +22,7 @@ public class CalculatorController {
 
     @GetMapping("/")
     public String hello() {
-        return "<h2 style=\"color: green; text-align: center\">Добро пожаловать в калькулятор</h2>";
+        return "<h2 style=\"color: red; text-align: center\">Добро пожаловать в калькулятор</h2>";
     }
     @GetMapping( "/plus")
     public String plus (@RequestParam(value = "num1", required = false) Float a,

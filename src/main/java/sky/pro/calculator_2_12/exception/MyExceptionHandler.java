@@ -10,7 +10,7 @@ public class MyExceptionHandler {
     @ExceptionHandler(DivisionByZeroException.class)
     @ResponseStatus(HttpStatus.I_AM_A_TEAPOT)
     public void handleDivisionByZeroException(DivisionByZeroException e) {
-        System.out.println("Деление на ноль запрещено!");
+        System.out.println("Деление на ноль не допустимо!");
     }
     @ExceptionHandler(FieldValueExceptionParam1.class)
     @ResponseStatus(HttpStatus.NOT_FOUND)
